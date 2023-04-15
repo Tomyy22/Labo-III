@@ -1,0 +1,224 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.body-lore{
+    overflow-y: hidden;
+}
+body{
+    background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
+    overflow-x: hidden;
+    
+}
+
+.header-container {
+    display: flex;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(177, 184, 43));
+    width: 100%;
+    min-height: 9.375rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    height: 12.5rem;
+    margin-left: 1rem;
+    transition: 0.8s;
+  }
+  
+  .logo-container img:hover {
+    transform: rotate(360deg);
+  }
+  
+  .nav-container {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-container a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3rem;
+    transition: all 0.8s;
+  }
+  
+  .nav-container a:hover {
+    color: rgb(177, 184, 43);
+  }
+  
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex{
+    flex: 1;
+    min-width: 250px;
+    color: rgb(177, 184, 43);
+}
+.in-flex h2{
+    color: wheat;
+}
+.in-flex a{
+    color: rgb(177, 184, 43);
+    text-decoration: none;
+}
+
+.in-flex a:hover{
+    color: #ffb13a;
+}
+.in-flex h2:hover{
+    color:#ffb13a
+}
+
+.in-flex:first-child{
+    flex: 2;
+    padding: 25px;
+    background-color: rgb(35, 36, 31);
+    margin: 20px;
+    margin-bottom: 0px;
+    border: 2px solid;
+    border-radius: 10px;
+    animation: pulse-border 5s infinite;
+}
+
+.in-flex div{
+    padding: 25px;
+    background-color: rgb(35, 36, 31);
+    margin: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    animation: pulse-border 5s infinite;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 2%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .instagram,
+  .twitter {
+    margin-bottom: 1rem;
+    padding: 10px;
+  }
+  
+  .instagram i,
+  .twitter i {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    transition: all 0.6s;
+  }
+  
+  .instagram i:hover {
+    transform: scale(1.2);
+    color: #cc0ad6;
+  }
+  
+  .twitter i:hover {
+    transform: scale(1.2);
+    color: #0db1ec;
+  }
+
+/* ----------------------------------------------Lore.Html----------------------------------------------------- */
+
+.container{
+    width: 60rem;
+    height: 35rem;
+    background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
+    margin: 0 auto;
+}
+.lore-container{
+    width: 50rem;
+    height: 25rem;
+    color: #ffb13a;
+    transform: perspective(250px) rotateX(20deg);
+    animation: intro 80s linear infinite;
+    margin: 0 auto;
+    margin-top: 15rem;
+}
+
+#wait{
+    color: #ffb13a;
+    margin: 0 auto;
+    animation: des 80s linear infinite;
+    position: absolute;
+    left: 45%;
+    top: 30%;
+}
+
+
+/* ----------------------------------------------Keyframes----------------------------------------------------- */
+
+@keyframes intro {
+    0% {
+      transform: perspective(250px) rotateX(14deg) translateY(800px);
+      opacity: 1;
+    }
+    60%{
+      opacity: 0.6;
+    }
+    100% {
+      transform: perspective(250px) rotateX(20deg) translateY(-1000px);
+      opacity: 0.1;
+      
+    }
+  }
+  
+  @keyframes des {
+    30%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+
+
+@keyframes pulse-border {
+    0% {
+      border-color: #000;
+    }
+    50% {
+      border-color: greenyellow;
+    }
+    100% {
+      border-color: #000;
+    }
+  }
+
+  
+/* ----------------------------------------------Medias----------------------------------------------------- */
+
+@media (max-width: 930px) {
+        .lore-container{
+            width: 25rem;
+        }
+        .container{
+            margin-left: 0%;
+        }
+    }
+
+@media (max-width: 685px) {
+        .lore-container{
+            width: 25rem;
+            margin-left: 7%;
+        }
+        .container{
+            margin-left: 0;
+        }
+        #wait{
+            left: 30%;
+        }
+    }
