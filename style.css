@@ -5,11 +5,11 @@
 }
 .body-lore{
     overflow-y: hidden;
+
 }
 body{
     background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
     overflow-x: hidden;
-    
 }
 
 .header-container {
@@ -17,6 +17,7 @@ body{
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(177, 184, 43));
     width: 100%;
     min-height: 9.375rem;
+    min-width: max-content;
     justify-content: space-between;
     align-items: center;
   }
@@ -222,3 +223,16 @@ footer {
             left: 30%;
         }
     }
+
+@media (max-width: 444px){
+      .nav-container{
+        flex-direction: column;
+      }
+      .lore-container{
+          width: 20rem;
+          margin-left: 3%;
+      }
+      #wait{
+        left: 20%;
+      }
+}
