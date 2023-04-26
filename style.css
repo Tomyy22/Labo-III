@@ -158,7 +158,6 @@ footer {
     top: 30%;
 }
 
-
 /* ----------------------------------------------Keyframes----------------------------------------------------- */
 
 @keyframes intro {
@@ -224,7 +223,7 @@ footer {
         }
     }
 
-@media (max-width: 444px){
+@media (max-width: 512px){
       .nav-container{
         flex-direction: column;
       }
